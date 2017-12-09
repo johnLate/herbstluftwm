@@ -564,6 +564,7 @@ void complete_against_comparators(int argc, char** argv, int pos, GString* outpu
             case HSATTR_TYPE_UINT:
             case HSATTR_TYPE_CUSTOM_INT:
                 complete_against_list(needle, order, output);
+                // fallthrough
             default:
                 complete_against_list(needle, equals, output);
                 break;

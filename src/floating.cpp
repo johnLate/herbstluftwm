@@ -54,6 +54,7 @@ static void rectlist_rotate(RectangleIdx* rects, size_t cnt, int* idx,
             }
             *idx = cnt - 1 - *idx;
             // and then direction up now has become direction down
+            // fallthrough
         case DirDown:
             // flip by the diagonal
             //

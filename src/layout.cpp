@@ -199,7 +199,7 @@ HSFrame* lookup_frame(HSFrame* root, const char *index) {
                             :  layout->a;
                   break;
         /* else just follow selection */
-        case '@': new_index = index;
+        case '@': new_index = index; // fallthrough
         case '.':
         default:  new_root = (layout->selection == 0)
                             ?  layout->a
